@@ -1,5 +1,6 @@
 <template>
   <div class="nav">
+    <Todos />
     <!-- <button @click="addToList()">Add new item</button> -->
     <div class="buttons">
       <label for="split-color">Split Color</label>
@@ -25,6 +26,7 @@
 </template>
 
 <script>
+import Todos from "../components/Todos.vue"
 import { useTodoList } from "../composable/useTodoList";
 import { useMousePosition } from "../composable/useMousePosition";
 import { computed, ref } from "vue";
@@ -96,6 +98,7 @@ ul li button {
   padding: 8px;
 }
 .list-1 {
+  color: white;
   background-color: rgb(93, 136, 65);
 }
 .buttons {
