@@ -1,15 +1,16 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<!-- <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+const x = ref(0)
+const y = ref(0)
+
+function update(event) {
+  x.value = event.pageX
+  y.value = event.pageY
 }
-</style>
+
+onMounted(() => window.addEventListener('mousemove', update))
+onUnmounted(() => window.removeEventListener('mousemove', update))
+</script>
+
+<template>Mouse position is at: {{ x+10 }}, {{ y+20 }}</template> -->
